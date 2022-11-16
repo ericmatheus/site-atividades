@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 03</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="..\estilo.css">
+</head>
+
+<body onload="carregar()">
+
+    <header id="barra">
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+    </header>
+
+    <nav id="menu">
+        <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="..\exercicio1\ex01.html">Horário</a>
+        <a href="..\exercicio2\ex02.html">Verif. Idade</a>
+        <a href="..\exercicio3\ex03.html">Contador</a>
+        <a href="..\exercicio4\ex04.html">Tabuada</a>
+        <a href="..\exercicio5\ex05.html">Números</a>
+        <a href="..\index.html">VOLTAR</a>
+    </nav>
+
+    <main  id="principal"> 
+        <header id="titulo">
+            <h1>Contador</h1>
+        </header>
+
+        <section>
+            <div>
+                <label for="inicio">Início: </label>
+                <input type="number" name="" id="txtInicio"><br><br>
+
+                <label for="fim">Fim: </label>
+                <input type="number" name="" id="txtFim"><br><br>
+
+                <label for="passo">Passo: </label>
+                <input type="number" name="" id="txtPasso"><br><br>
+
+                <input type="button" value="Contar" onclick="contar()">
+            </div>
+            <p>Resultado: </p>
+            <div id="resultado"></div>
+            </div>
+        </section>
+            
+        <footer>
+            <p>&copy; Created by Eric Matheus</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="..\script.js"></script>
+</body>
+
+</html>

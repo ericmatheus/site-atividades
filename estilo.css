@@ -1,0 +1,55 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+header#barra {
+    background-color: rgb(48, 3, 133);
+    color: white;
+    padding: 10px;
+}
+
+.btn-abrir {
+    color: white;
+    font-size: 25px;
+}
+
+nav {
+    height: 100%;
+    width: 0px;
+    background-color: rgb(48, 3, 133);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /*indica q esse elemento vai sobrepor outros elementos. so funciona para elementos q possui a propriedade position definida */
+    overflow: hidden;
+    transition: width 0.3s;
+    padding-top: 50px;
+}
+
+
+nav a {
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: rgb(48, 3, 133);
+    background-color: white;
+}
+
+main {
+    padding: 10px;
+    transition: margin-left 0.3s;
+}

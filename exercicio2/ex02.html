@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercicio 02</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="..\estilo.css">
+</head>
+
+<body onload="carregar()">
+
+  <header id="barra">
+    <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+  </header>
+
+  <nav id="menu">
+    <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="..\exercicio1\ex01.html">Horário</a>
+        <a href="..\exercicio2\ex02.html">Verif. Idade</a>
+        <a href="..\exercicio3\ex03.html">Contador</a>
+        <a href="..\exercicio4\ex04.html">Tabuada</a>
+        <a href="..\exercicio5\ex05.html">Números</a>
+        <a href="..\index.html">VOLTAR</a>
+  </nav>
+
+  <main id="principal">
+    <header id="titulo">
+      <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+      <div>
+        <p>Ano de nascimento:
+          <input type="number" name="ano" id="textoAno" min="0">
+        </p>
+
+        <p>Sexo:
+          <input type="radio" name="radioSex" id="masc" checked>
+          <label for="masc"> Masculino</label>
+          <input type="radio" name="radioSex" id="fem">
+          <label for="fem">Femenino</label>
+
+        </p>
+        <p>
+          <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+
+      </div>
+      <div id="resultado">
+        <img id="imagem" src="images\imagemPadrao.png" alt="Imagem Icone Pessoa">
+
+      </div>
+      <div id="resultado2">
+        resultado 2
+      </div>
+
+
+
+    </section>
+    <footer>
+      <p>&copy; Created by Eric Matheus</p>
+    </footer>
+  </main>
+
+ 
+  <script src="script.js"></script>
+  <script src="..\script.js"></script>
+</body>
+
+</html>

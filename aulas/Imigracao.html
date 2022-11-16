@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Imigração</title>
+        <style>
+            body{
+                color: rgb(0, 500, 0);
+                background-color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                
+            }
+
+            #principal{
+                border-style: solid;
+                border-width: 2pt;
+                border-color: greenyellow;
+                padding: 10pt;
+                margin: 40pt;
+                max-width: 550px;
+            }
+
+            #div2{
+                
+                min-height: 150px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="principal">
+            <h1>Sistema de imigração</h1>
+            <div>
+                <p>Digite seu país de origem</p>
+
+                <input type="text" id="texto" placeholder="Digite aqui..."><br><br>
+
+                <input type="button" value="verificar" onclick="gerarResultado()">
+                <input type="button" value="limpar" onclick="limpar()">
+
+            </div>
+
+            <div id="div2">
+                <h2>RESULTADO</h2>
+                <p id="rest" >Aguardando dados...</p>
+                <p id="rest2"></p>
+            </div>
+
+        </div>
+
+        <script>
+        
+            var paragrafo = window.document.getElementById('rest');
+            var restTexto = window.document.querySelector('#texto');
+            var results = window.document.querySelector('#div2');
+            var rest2 = window.document.querySelector('#rest2');
+            
+            function gerarResultado(){
+               var val = restTexto.value.toUpperCase();
+
+               
+                paragrafo.innerHTML = `Voce nasceu no ${val}`; 
+
+                
+                if(val == 'BRASIL'){ 
+                   
+                    rest2.innerHTML = `<p>Voce é Brasileiro</p>`;
+                }else{
+                    rest2.innerHTML = `<p>Voce é ESTRANGEIRO</p>`;
+                }
+            }
+
+            function limpar(){
+                rest2.innerHTML = " ";
+                paragrafo.innerHTML = `<p>Aguardando dados...</p>`;
+                restTexto.value = '';
+            }
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+

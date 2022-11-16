@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="..\estilo.css">
+
+</head>
+
+<body onload="carregar()">
+
+    <header id="barra">
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+    </header>
+
+    <nav id="menu">
+        <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="..\exercicio1\ex01.html">Horário</a>
+        <a href="..\exercicio2\ex02.html">Verif. Idade</a>
+        <a href="..\exercicio3\ex03.html">Contador</a>
+        <a href="..\exercicio4\ex04.html">Tabuada</a>
+        <a href="..\exercicio5\ex05.html">Números</a>
+        <a href="..\index.html">VOLTAR</a>
+    </nav>
+
+    <main id="principal">
+        <header id="titulo">
+            <h1>Analisador de Números</h1>
+        </header>
+
+        <section>
+            <div id="div1">
+                Numero de (0 a 20)
+                <input type="number" id="numeroEntrada">
+                <input type="button" value="ADD" onclick="adicionar()">
+            </div>
+            <div id="div2" class="">
+                <div id="div2-1">
+                    <select name="" id="registro" size="10">
+                        <option id="titulo" value="">REGISTRO</option>
+                    </select>
+
+                    <input type="button" value="Finalizar" onclick="finalizar()">
+                </div>
+                <div id="div2-2">
+
+                </div>
+
+            </div>
+            <div id="div3">
+
+            </div>
+            
+        </section>
+
+        <footer>
+            <p>&copy; Created by Eric Matheus</p>
+        </footer>
+       
+    </main>
+
+    <script src="script.js"></script>
+    <script src="..\script.js"></script>
+</body>
+
+</html>

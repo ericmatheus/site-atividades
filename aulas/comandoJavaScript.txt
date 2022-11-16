@@ -1,0 +1,45 @@
+typeof(variavel) // Retorna o tipo de variavel. ex: number, String, boolean.
+
+>>> Operadores no JS.
+-aritméticos   + - * / % ** 
+-atribuição
+-relacionais
+-lógicos
+-tenários
+
+DOM = Document Object Model
+DOM é um facilitador que existe dentro do navegador dentro do HTML 5 que dá acesso aos elementos diretamente pro javaScript
+
+-Dentro do DOM temos o objeto WINDOW;
+-Dentro do WINDOW temos os objetos: LOCATION, DOCUMENT, HISTORY;
+-Dentro do DOCUMENT temos o objeto HTML;
+-Dentro do HTML temos os objetos HEAD BODY
+
+
+Arvore DOM
+
+-variavel.innerText //Retorna o texto q esta dentro da variavel de referencia
+
+-window.document.getElementByTagName('nome da tag') //Retorna uma referencia para a tag no HTML cujo o nome foi passado como paramentro
+
+window.document.getElementByTagId('nome da tag') //retorna a referencia da variavel do ID passando como paramentro.
+
+window.document.getElementByTagId('nome da tag') //retorna a referencia da variavel do ID passando como paramentro.
+
+window.document.querySelector('div#msg')
+
+EVENTOS DOM
+eventos de Mouse(mouse events)
+-mouseenter
+-mousemove
+-mousedown
+-mouseup
+-click
+-mouseout
+
+>Exemplos de addEventListener()
+-a.addEventListener('click', clicar);
+-a.addEventListener('mouseenter', entrar);
+-a.addEventListener('mouseout', sair);
+
+
